@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img href="index.html" src="assets/images/logo.png" alt="dumbways_logo" />
+          </li>
+          <li class="item-collapse">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="item-collapse">
+            <a href="myproject.html">My Project</a>
+          </li>
+          <li class="item-collapse">
+            <a href="testimoni.html">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right item-collapse">
+        <a class="active"  href="contact.html">Contact Me</a>
+      </div>
+
+      <!-- adding bars menu (mobile view only) -->
+      <div class="nav-right" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+  </nav>
+    <!-- bar menu on mobile view -->
+  <div class="hamburger-nav-container" id="hamburger-nav-container">
+    <a href="index.html">Home</a>
+    <a href="myproject.html">My Project</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="contact.html" class="hamburger-active">Contact Me</a>
+  </div>
+
+  <script src="js/index.js"></script>
+
+    <h1>Isi Aja</h1>
+    <form>
+      <div>
+        <label for="input-name">Name</label>
+        <input id="input-name" height="100" type="text" required />
+      </div>
+
+      <div>
+        <label for="input-email">Email</label>
+        <input id="input-email" type="email" required />
+      </div>
+
+      <div>
+        <label for="input-phone">Phone Number</label>
+        <input id="input-phone" type="number" required />
+      </div>
+
+      <div>
+        <label for="input-subject">Subject</label>
+        <select id="input-subject">
+          <option value="" hidden></option>
+          <option>Lets talk</option>
+          <option>Lets play</option>
+          <option>Lets fight</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="input-message">Your Message</label>
+        <textarea id="input-message" rows="5" cols="10"></textarea>
+      </div>
+
+      <div class="container-button">
+        <button type="button" onclick="submitData()">Submit</button>
+      </div>
+    </form>
+
+    <script src="js/contact.js"></script>
+
+  </body>
+</html>
